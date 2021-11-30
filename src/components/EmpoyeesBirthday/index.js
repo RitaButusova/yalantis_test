@@ -25,7 +25,7 @@ export default function EmpoyeesBirthday(props) {
       return (
         <>
           <li key={employee.id}>
-            {employee.lastName} {employee.firstName} - {employee.dob}
+            {employee.lastName} {employee.firstName} - {employee.dob.getDate()}.{employee.dob.getMonth()}.{employee.dob.getFullYear()}
           </li>
         </>
       );
